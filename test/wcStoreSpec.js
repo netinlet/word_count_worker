@@ -32,7 +32,7 @@ describe('wcStore service', function() {
   //});
 
   it('can store the url and wordcount', function(done) {
-    wcStore.store('http://some.url', 87, function(err, result) {
+    wcStore.store({url: 'http://some.url', word_count: 87}, function(err, result) {
       expect(result).not.to.be(undefined);
       expect(result.id).to.be.ok();
       expect(result.rev).to.be.ok();

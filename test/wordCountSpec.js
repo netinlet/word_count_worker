@@ -26,8 +26,9 @@ describe('Word Count', function() {
       .reply(200, paragraph, {'Content-Type': 'text/plain'});
 
 
-      wordCounter.countFromUrl(wcUrl + '/words.txt', function(err, result) {
-        expect(result).to.be.equal(21);
+      wordCounter.countFromUrl({url: wcUrl + '/words.txt'}, function(err, result) {
+        expect(result.url).to.be.equal(wcUrl + '/words.txt');
+        expect(result.word_count).to.be.equal(21);
         done();
       });
 

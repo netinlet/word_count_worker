@@ -32,7 +32,7 @@ describe('Word Count Worker', function() {
       .reply(200, sentence, {'Content-Type': 'text/plain'});
 
     var args = [
-      "http://example.com/words.txt"
+      {url: "http://example.com/words.txt"}
     ];
 
     worker(args, function(err, result) {
