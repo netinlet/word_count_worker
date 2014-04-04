@@ -30,10 +30,13 @@ npm test
 
 ### Environment variables
 
-Name                   | Default                                              | Description
----------------------- |----------------------------------------------------- |-------------
-`WORKER_NAME`          | wordCountWorker                                      | name used in call to DingBot and for logging
-
+Name                            | Default               | Description
+---------------------- | -------------------------------| ----------------------------------------------
+`WORKER_NAME`          | word_count_worker_dev          | name used in call to DingBot and for logging
+`DINGBOT_URL`          | http://localhost:1234          | Location of the dingbot
+`HEALTH_STATUS_PORT`   | 3000                           | port to run the health check
+`CLOUDQ_URL`           | http://foo:bar@localhost:8000  | Location of the cloudq
+`WORD_COUNT_DB`        | http://localhost:5984          | location of couchdb service
 
 ### Node.js worker requirements
 
