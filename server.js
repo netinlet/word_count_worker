@@ -13,9 +13,10 @@ var dingbot = require('./lib/dingbot')({
     log: log
   });
 
-var healthServer = require('./lib/health')({
-  log: log
-}).listen(config.web.port);
+  // TODO
+//var healthServer = require('./lib/health')({
+  //log: log
+//}).listen(config.web.port);
 
 var worker = require('./lib/worker')(config);
 

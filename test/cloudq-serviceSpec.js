@@ -34,7 +34,7 @@ describe('CloudQ Service', function() {
       service;
 
     beforeEach(function() {
-      logSpy = { 
+      logSpy = {
         info: sinon.spy(),
         error: sinon.spy()
       };
