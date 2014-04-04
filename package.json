@@ -1,0 +1,40 @@
+{
+  "name": "word_count_worker",
+  "version": "0.0.0",
+  "description": "Counts words from URL's",
+  "scripts": {
+    "start": "forever server.js",
+    "test": "mocha -R spec -d"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.3.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/netinlet/word_count_worker.git"
+  },
+  "keywords": [
+    "worker",
+    "word_count_worker"
+  ],
+  "bugs": {
+    "url": "https://github.com/netinlet/word_count_worker/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.1",
+    "expect.js": "~0.2.0",
+    "nock": "~0.27.2",
+    "sinon": "~1.8.2",
+    "supertest": "~0.9.0"
+  },
+  "dependencies": {
+    "bunyan": "~0.22.1",
+    "superagent": "~0.16.0",
+    "async": "~0.2.10",
+    "nano": "~4.7.1",
+    "underscore": "~1.6.0",
+    "forever": "~0.10.11",
+    "node-uuid": "~1.4.1"
+  }
+}

@@ -1,0 +1,5 @@
+---
+applications:
+- name: word_count_worker
+  command: node server.js
+  memory: 128M
